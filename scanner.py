@@ -50,6 +50,10 @@ def check_hidden_modules():
     for module in modules_proc:
         if module not in modules_sys:
             hidden.append(module)
+
+    for module in modules_sys:
+        if module not in modules_proc:
+            hidden.append(module)
     
     return hidden
 
