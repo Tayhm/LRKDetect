@@ -14,6 +14,6 @@ There are other malicious things rootkits might do like hiding open ports, which
 
 First, clone the repository. Second:
 
-    python scanner.py
+    python3 scanner.py
 
 The script will let you know if something malicious was found.
