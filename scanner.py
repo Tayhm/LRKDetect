@@ -43,7 +43,7 @@ def check_hidden_modules():
     modules_sys = os.listdir("/sys/module")
 
     # Not all subdirectories in /sys/module correspond to modules. But those that contain a sections-subdirectory do.
-    for module in modules_sys:
+    for module in modules_sys.copy():
         if "sections" not in os.listdir(f"/sys/module/{module}"):
             modules_sys.remove(module)
 
