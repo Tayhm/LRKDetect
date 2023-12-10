@@ -5,6 +5,7 @@ def get_PID_by_files(max_pid):
     existing_pids = []
 
     for pid in range(1, max_pid+1):
+        pid = str(pid)
         try:
             # If this file exists, then the *thread* exists
             with open(f"/proc/{pid}/status") as file:
