@@ -10,6 +10,8 @@ If it hides from both locations, or does not hide at all, it will not be detecte
 
 There are other malicious things rootkits might do like hiding open ports, which will not be detected.
 
+I tested it against Diamorphine, which hid itself and one process, and it was able to detect both.
+
 ## Running the script
 
 First, clone the repository. Second:
