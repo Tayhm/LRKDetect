@@ -1,4 +1,4 @@
-# LRKDetect - Linix Rootkit Detect
+# LRKDetect - Linux Rootkit Detect
 
 This is a small python script which can detect Linux Kernel Mode Rootkits.
 
