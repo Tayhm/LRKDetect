@@ -88,7 +88,11 @@ if __name__ == "__main__":
 
     for module in check_hidden_modules():
         is_detected = True
-        print(f"The module {module} is hidden. It might be a rootkit.")
+        cmdline = ""
+        with open("/proc/{module}/cmdline", "r") as file:
+            cmdline = file.readline()
+        
+        print(f"The module {module} is hidden. It might be a rootkit. Cmdline: {cmdline}")
 
     for pid in check_hidden_pid():
         is_detected = True
