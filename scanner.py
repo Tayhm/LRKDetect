@@ -96,7 +96,7 @@ if __name__ == "__main__":
         is_detected = True
 
         cmdline = ""
-        with open("/proc/{module}/cmdline", "r") as file:
+        with open(f"/proc/{module}/cmdline", "r") as file:
             cmdline = file.readline()
 
         print(f"Process {pid} is hidden. Potential Rootkit-Activity. Cmdline: {cmdline}")
